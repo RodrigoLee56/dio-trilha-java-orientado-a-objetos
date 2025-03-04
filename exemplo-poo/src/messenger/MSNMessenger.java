@@ -4,11 +4,20 @@ public class MSNMessenger extends InstantMessagingService {
 
 	public MSNMessenger() {
 		super();
-		getName();
+		System.out.println(getName());
 	}
-	
-	private void getName() {
-		System.out.println("MSN Messenger\n".toUpperCase());
+
+	private String getName() {
+		return "MSN Messenger\n".toUpperCase();
 	}
-	
+
+	public void enviarMensagem() {
+		System.out.println("Enviando mensagem pelo " + getName());
+
+	}
+
+	public void receberMensagem() {
+		System.out.println("Recebendo mensagem pelo " + getName());
+	}
+
 }

@@ -3,10 +3,19 @@ package messenger;
 public class Telegram extends InstantMessagingService {
 	public Telegram() {
 		super();
-		getName();
+		System.out.println(getName());
 	}
-	
-	private void getName() {
-		System.out.println("Telegram\n".toUpperCase());
+
+	private String getName() {
+		return "Telegram\n".toUpperCase();
+	}
+
+	public void enviarMensagem() {
+		System.out.println("Enviando mensagem pelo " + getName());
+
+	}
+
+	public void receberMensagem() {
+		System.out.println("Recebendo mensagem pelo " + getName());
 	}
 }

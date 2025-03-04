@@ -3,10 +3,19 @@ package messenger;
 public class FacebookMessenger extends InstantMessagingService {
 	public FacebookMessenger() {
 		super();
-		getName();
+		System.out.println(getName());
 	}
 	
-	private void getName() {
-		System.out.println("Facebook Messenger\n".toUpperCase());
+	private String getName() {
+		return "Facebook Messenger\n".toUpperCase();
+	}
+
+	public void enviarMensagem() {
+		System.out.println("Enviando mensagem pelo " + getName());
+
+	}
+
+	public void receberMensagem() {
+		System.out.println("Recebendo mensagem pelo " + getName());
 	}
 }
