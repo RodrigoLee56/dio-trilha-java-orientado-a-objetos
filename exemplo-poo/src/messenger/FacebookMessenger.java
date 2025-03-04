@@ -11,11 +11,14 @@ public class FacebookMessenger extends InstantMessagingService {
 	}
 
 	public void enviarMensagem() {
+		validarConctadoInternet();
 		System.out.println("Enviando mensagem pelo " + getName());
-
+		salvarHistoricoMensagem();
 	}
 
 	public void receberMensagem() {
+		validarConctadoInternet();
 		System.out.println("Recebendo mensagem pelo " + getName());
+		salvarHistoricoMensagem();
 	}
 }
